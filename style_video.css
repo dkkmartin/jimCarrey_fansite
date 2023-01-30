@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* Video */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto 10px auto;
+    font-family: "roboto", "Times New Roman", Times, serif;
+    color: rgb(212, 212, 212);
+    /* background-color: rgb(84, 84, 84); */
+    background: rgb(84, 84, 84);
+    background: radial-gradient(circle, rgba(84, 84, 84, 1) 82%, rgba(0, 0, 0, 1) 100%);
+    line-height: 1.27em;
+    max-width: 1000px;
+}
+
+header {
+    margin: 10px 50px 0 50px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    list-style: none;
+    font-weight: 200;
+    font-size: 18px;
+}
+header ul li a {
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+    transition: color 0.5s;
+}
+
+header ul li a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "video1 video2"
+        "video3 video4";
+    gap: 3em;
+    margin-top: 2em;
+}
+
+.video_1 {
+    grid-area: video1;
+}
+
+.video_2 {
+    grid-area: video2;
+}
+
+.video_3 {
+    grid-area: video3;
+}
+
+.video_4 {
+    grid-area: video4;
+}

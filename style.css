@@ -24,8 +24,8 @@ header {
 
 header ul {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: space-evenly;
+    gap: 3em;
     list-style: none;
     font-weight: 200;
     font-size: 18px;
@@ -63,6 +63,12 @@ hr {
     border-radius: 50%;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+}
+/* Index */
 .article1,
 .article2,
 .article3,
