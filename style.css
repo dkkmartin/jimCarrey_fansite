@@ -79,15 +79,7 @@ footer {
     margin: 20px 0px 20px 0px;
 }
 
-.article1 {
-    flex-direction: column;
-    gap: 20px;
-}
-.article1_indhold {
-    display: flex;
-    gap: 20px;
-}
-
+.article1_indhold,
 .article2_indhold {
     display: flex;
     gap: 20px;
@@ -95,7 +87,6 @@ footer {
 
 .article3_indhold {
     display: flex;
-    justify-content: space-around;
     gap: 50px;
 }
 
@@ -105,9 +96,43 @@ footer {
     margin-bottom: 40px;
 }
 
+.article1,
 .article2,
 .article3,
 .article4 {
     flex-direction: column;
     gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0 auto 10px auto;
+        font-size: 10px;
+    }
+
+    main iframe {
+        display: none;
+    }
+
+    .article1_indhold,
+    .article2_indhold,
+    .article3_indhold,
+    .article4_indhold {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .article1_indhold img {
+        flex: 2;
+    }
+
+    .article3_indhold img {
+        max-width: 300px;
+        max-height: 280px;
+    }
+
+    .article4_indhold {
+        margin-bottom: 0;
+    }
 }
