@@ -127,9 +127,10 @@ footer {
         flex: 2;
     }
 
+    .article3 {
+    }
     .article3_indhold img {
-        max-width: 300px;
-        max-height: 280px;
+        flex: 2;
     }
 
     .article4_indhold {
