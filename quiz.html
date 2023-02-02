@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jim Carrey Fansite</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="more_info.html">More info</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </header>
+        <main>
+            <form name="quiz" onsubmit="event.preventDefault(); checkQuiz()">
+                <fieldset>
+                    <h3>When was Jim Carrey born?</h3>
+                    <div>
+                        <input type="radio" name="question_1" id="question_1_1" value="1958" />
+                        <label for="1958">1958</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question_1" id="question_1_2" value="1962" />
+                        <label for="1962">1962</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question_1" id="question_1_3" value="1967" />
+                        <label for="1967">1967</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question_1" id="question_1_4" value="1969" />
+                        <label for="1969">1969</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h3>How long did Jim Carrey date Linda Ronstadt?</h3>
+                    <div>
+                        <input
+                            type="radio"
+                            name="question_2"
+                            id="question_2_1"
+                            value="six_months"
+                        />
+                        <label for="six_months">Six months</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_2" id="question_2_2" value="one_year" />
+                        <label for="one_year">One Year</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            name="question_2"
+                            id="question_2_3"
+                            value="eight_months"
+                        />
+                        <label for="eight_months">Eight months</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_2" id="question_2_4" value="two_years" />
+                        <label for="two_years">Two years</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h3>In what year did Carrey star in Me, Myself & Irene?</h3>
+                    <div>
+                        <input type="radio" name="question_3" id="question_3_1" value="1990" />
+                        <label for="1990">1990</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_3" id="question_3_2" value="1994" />
+                        <label for="1994">1994</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question_3" id="question_3_3" value="2000" />
+                        <label for="2000">2000</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question_3" id="question_3_4" value="2003" />
+                        <label for="2003">2003</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h3>What was Carrey's first big break in the film industry?</h3>
+                    <div>
+                        <input
+                            type="radio"
+                            name="question_4"
+                            id="question_4_1"
+                            value="Ace Ventura: Pet Detective"
+                        />
+                        <label for="Ace Ventura: Pet Detective">Ace Ventura: Pet Detective</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question_4" id="question_4_2" value="The Mask" />
+                        <label for="The Mask">The Mask</label>
+                    </div>
+
+                    <div>
+                        <input
+                            type="radio"
+                            name="question_4"
+                            id="question_4_3"
+                            value="Dumb and Dumber"
+                        />
+                        <label for="Dumb and Dumber">Dumb and Dumber</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question_4" id="question_4_4" value="Liar Liar" />
+                        <label for="Liar Liar">Liar Liar</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h3>In what year did Carrey star in Yes Man?</h3>
+                    <div>
+                        <input type="radio" name="question_5" id="question_5_1" value="2002" />
+                        <label for="2002">2002</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_5" id="question_5_2" value="2005" />
+                        <label for="2005">2005</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_5" id="question_5_3" value="2008" />
+                        <label for="2008">2008</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_5" id="question_5_4" value="2010" />
+                        <label for="2010">2010</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h3>Which city was Jim Carrey born?</h3>
+                    <div>
+                        <input type="radio" name="question_6" id="question_6_1" value="New York" />
+                        <label for="New york">New York</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_6" id="question_6_2" value="Toronto" />
+                        <label for="Toronto">Toronto</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_6" id="question_6_3" value="Texas" />
+                        <label for="Texas">Texas</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_6" id="question_6_4" value="Québec" />
+                        <label for="Québec">Québec</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h3>In what year did Carrey star in The Mask</h3>
+                    <div>
+                        <input type="radio" name="question_7" id="question_7_1" value="1991" />
+                        <label for="1991">1991</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_7" id="question_7_2" value="1993" />
+                        <label for="1993">1993</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_7" id="question_7_3" value="1994" />
+                        <label for="1994">1994</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question_7" id="question_7_4" value="1996" />
+                        <label for="1996">1996</label>
+                    </div>
+                </fieldset>
+                <button type="submit">Check Answers</button>
+            </form>
+            <div class="modal">
+                <div class="modal_content">
+                    <span class="close_modal">&times;</span>
+                    <div>
+                        <p class="modal_points"></p>
+                        <p class="modal_text"></p>
+                        <button onclick="window.location.reload();">Try again</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
