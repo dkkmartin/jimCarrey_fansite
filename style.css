@@ -153,9 +153,10 @@ form button {
     padding: 20px;
     border: solid 2px black;
     width: 80%;
+    font-size: 24px;
 }
 
-.modal_content div {
+.modal_content_con {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -165,6 +166,19 @@ form button {
 .modal_content div button {
     width: 200px;
 }
+
+.correct_answers {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 25px;
+}
+
+.correct_answers p {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3%;
+}
+
 .close_modal {
     color: #aaa;
     float: right;
@@ -183,6 +197,9 @@ form button {
     display: block;
 }
 
+.hide {
+    display: none;
+}
 @media only screen and (max-width: 600px) {
     body {
         margin: 0 auto 10px auto;

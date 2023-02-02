@@ -20,37 +20,30 @@ function checkQuiz() {
 
     if (checkQuiz1 == true) {
         correctAnswers += 1;
-        console.log(correctAnswers);
     }
 
     if (checkQuiz2 == true) {
         correctAnswers += 1;
-        console.log(correctAnswers);
     }
 
     if (checkQuiz3 == true) {
         correctAnswers += 1;
-        console.log(correctAnswers);
     }
 
     if (checkQuiz4 == true) {
         correctAnswers += 1;
-        console.log(correctAnswers);
     }
 
     if (checkQuiz5 == true) {
         correctAnswers += 1;
-        console.log(correctAnswers);
     }
 
     if (checkQuiz6 == true) {
         correctAnswers += 1;
-        console.log(correctAnswers);
     }
 
     if (checkQuiz7 == true) {
         correctAnswers += 1;
-        console.log(correctAnswers);
     }
 
     if (correctAnswers == 0) {
@@ -76,3 +69,29 @@ function checkQuiz() {
 
     modal.classList.add("show");
 }
+
+(function showCorrect() {
+    const showBtn = document.querySelector(".show_btn");
+    showBtn.addEventListener("click", () => {
+        const showIt = document.querySelector(".hide").classList.remove("hide");
+        showBtn.classList.add("hide");
+    });
+
+    let quizList = [
+        "1962",
+        "Eight months",
+        "2000",
+        "Ace Ventura: Pet Detective",
+        "2008",
+        "Toronto",
+        "1994",
+    ];
+    let i = 1;
+    const correctAnswers = document.querySelector(".correct_answers");
+    quizList.forEach((element) => {
+        const newPara = document.createElement("p");
+        newPara.innerText = `Question ${i}: ${element}`;
+        correctAnswers.appendChild(newPara);
+        i++;
+    });
+})();
