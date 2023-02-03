@@ -230,4 +230,15 @@ form button {
     .article4_indhold {
         margin-bottom: 0;
     }
+
+    .modal_buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .correct_answers {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 12px;
+    }
 }
